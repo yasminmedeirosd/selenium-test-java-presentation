@@ -7,13 +7,11 @@ import pageObject.PesquisaPage;
 
 public class PesquisarSala_test extends BaseTest {
 
-    //Create a Chrome driver. All test and page classes use this driver.
         WebDriverWait wait;
-
         PesquisaPage pesquisaPage = new PesquisaPage(driver, wait);
 
         @Given("^que estou na home do Bate-Papo UOL$")
-        public void que_estou_na_home_do_Bate_Papo_UOL() {
+        public void que_estou_na_home_do_Bate_Papo_UOL()  {
 
             GoToBatePapoUOL();
 
