@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: br.com.presentation.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 4, Skipped: 7, Time elapsed: 3.315 sec <<< FAILURE!
+Given que estou na home do Bate-Papo UOL(| amizade | Resultados para o termo "amizade" em Sala | Amizade virtual (2) |)  Time elapsed: 0.019 sec  <<< ERROR!
+java.lang.NullPointerException
+	at br.com.presentation.tests.BaseTest.GoToBatePapoUOL(BaseTest.java:27)
+	at br.com.presentation.tests.PesquisarSala_test.que_estou_na_home_do_Bate_Papo_UOL(PesquisarSala_test.java:16)
+	at ?.Given que estou na home do Bate-Papo UOL(br/com/presentation/PesquisarSala.feature:5)
+
+| amizade | Resultados para o termo "amizade" em Sala | Amizade virtual (2) |  Time elapsed: 0.021 sec  <<< ERROR!
+java.lang.NullPointerException
+	at br.com.presentation.tests.BaseTest.GoToBatePapoUOL(BaseTest.java:27)
+	at br.com.presentation.tests.PesquisarSala_test.que_estou_na_home_do_Bate_Papo_UOL(PesquisarSala_test.java:16)
+	at ?.Given que estou na home do Bate-Papo UOL(br/com/presentation/PesquisarSala.feature:5)
+
+Given que estou na home do Bate-Papo UOL(| amizade123 | Não foram encontrados resultados em Sala para o termo "amizade123" |)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at br.com.presentation.tests.BaseTest.GoToBatePapoUOL(BaseTest.java:27)
+	at br.com.presentation.tests.PesquisarSala_test.que_estou_na_home_do_Bate_Papo_UOL(PesquisarSala_test.java:16)
+	at ?.Given que estou na home do Bate-Papo UOL(br/com/presentation/PesquisarSala.feature:15)
+
+| amizade123 | Não foram encontrados resultados em Sala para o termo "amizade123" |  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at br.com.presentation.tests.BaseTest.GoToBatePapoUOL(BaseTest.java:27)
+	at br.com.presentation.tests.PesquisarSala_test.que_estou_na_home_do_Bate_Papo_UOL(PesquisarSala_test.java:16)
+	at ?.Given que estou na home do Bate-Papo UOL(br/com/presentation/PesquisarSala.feature:15)
+

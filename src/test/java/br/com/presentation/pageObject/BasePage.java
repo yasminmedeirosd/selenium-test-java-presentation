@@ -1,4 +1,4 @@
-package pageObject;
+package br.com.presentation.pageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;

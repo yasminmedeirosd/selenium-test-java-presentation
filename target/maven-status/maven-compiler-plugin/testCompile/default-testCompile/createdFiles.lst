@@ -1,0 +1,5 @@
+br\com\presentation\tests\BaseTest.class
+br\com\presentation\RunnerTest.class
+br\com\presentation\tests\PesquisarSala_test.class
+br\com\presentation\pageObject\BasePage.class
+br\com\presentation\pageObject\PesquisaPage.class
