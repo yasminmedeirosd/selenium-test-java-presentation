@@ -14,8 +14,7 @@ public class PesquisaPage extends BasePage {
     String textSearchClass = "InputWithPopup-input";
     String buttonSearchXpath = "/html/body/div[5]/section/div/form/div[1]/button";
     String messageSearchValidNameRoom = "room-search";
-    String textNameRoomXpath = "//*[@id=\"reactSearch\"]/section/section/div/table/tbody/tr[1]/td[1]";
-    String messageInvalidNameRoomClass = "terms-not-found";
+    String messageInvalidNameRoomClass = "search-not-found-help";
 
 
     public void InsertNameRoom (String nameRoom){
@@ -28,14 +27,10 @@ public class PesquisaPage extends BasePage {
     }
 
     public void VerifyMessageValidSearch(String expectedTextNameRoom){
-        Assert.assertEquals(ValidateText(By.id(messageSearchValidNameRoom)), expectedTextNameRoom);
-    }
-
-    public void VerifyValidRoomName(String expectedTextNameRoom){
-        Assert.assertEquals(ValidateText(By.xpath(textNameRoomXpath)), expectedTextNameRoom);
+        Assert.assertEquals(expectedTextNameRoom, ValidateText(By.className(messageSearchValidNameRoom)));
     }
 
     public void  VerifyInvalidRoomName(String expectedTextMessage){
-        Assert.assertEquals(ValidateText(By.className(messageInvalidNameRoomClass)),expectedTextMessage);
+        Assert.assertEquals(expectedTextMessage, ValidateText(By.className(messageInvalidNameRoomClass)));
     }
 }
